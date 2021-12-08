@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>In-Picture</title>
+  </head>
+
+  <body onload="initGame()">
+    <div class="box">
+      <!-- <img class="bg-image" src="wood.jpg" /> -->
+      <div class="centered">
+        <h1>
+          Pick the sentence <br />
+          that describes the picture:
+        </h1>
+      </div>
+      <img class="image" src="" />
+      <button class="button1" index="0" onclick="result(this)"></button>
+      <button class="button2" index="1" onclick="result(this)"></button>
+    </div>
+
+    <div class="modal">
+      <button onclick="closeModal()">x</button>
+      <h3>Oops! Wrong answer...Try again!</h3>
+      <button onclick="closeModal()" class="restart">Play again</button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
